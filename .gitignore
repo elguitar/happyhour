@@ -1,0 +1,4 @@
+*.pyc
+settings.py
+happyhour/hh/migrations/
+__pycache__

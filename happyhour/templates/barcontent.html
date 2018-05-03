@@ -1,0 +1,20 @@
+{% extends 'master.html' %}
+{% block content %}
+
+<!-- @TODO https://getbootstrap.com/docs/4.0/components/card/ -->
+
+<div class="container">
+    <h1> Bars: </h1>
+        {% for bar in bars %}
+          {% cycle '<div class="row">' '' '' %}
+          <div class="container barcontainer col">
+            <h1><a href="{{ bar.slug }}/"> {{ bar }} </a><h1>
+              {% for hh in happyhours %}
+                {% if hh.bar.pk == bar.pk %}
+                  <h2>{{ hh.name }}</h2>
+                {% endif %}
+              {% endfor %}
+          </div>
+        {% endfor %}
+</div>
+{% endblock %}

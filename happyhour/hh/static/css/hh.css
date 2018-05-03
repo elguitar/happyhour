@@ -1,0 +1,59 @@
+/**
+ * Header
+ *
+header .page-header {
+    background-color: #009688;
+    margin-top: 0;
+    padding: 20px 20px 20px 40px;
+}
+
+.page-header h1, .page-header h1 a, .page-header h1 a:visited, .page-header h1 a:active {
+    color: #ffffff;
+    font-size: 36pt;
+    text-decoration: none;
+}
+
+/**
+ * Navigation bar
+ *
+nav {
+  background-color: #26A69A;
+  padding-left: 20px;
+}
+
+nav a, nav a:visited {
+  color: #ffffff;
+}
+
+/**
+ * Content
+ *
+.content h2 {
+  text-decoration: underline;
+}
+
+/**
+ * Footer
+ *
+footer .page-footer {
+    background-color: #009688;
+    margin-top: 0;
+    padding: 20px 20px 20px 40px;
+}
+
+.page-footer p {
+  color: #eeeeee;
+}
+*/
+.fa::before {
+  margin-right: 10px;
+}
+
+.barcontainer {
+  border-width: thin;
+  border: solid;
+}
+
+.no-bottom-margin {
+  margin-bottom: 0rem;
+}

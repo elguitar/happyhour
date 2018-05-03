@@ -1,0 +1,35 @@
+<nav class="navbar navbar-expand navbar-light bg-light">
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="{% url 'index' %}">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="{% url 'all_bars' %}">Bars</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="{% url 'about' %}">About</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="{% url 'mapdemo' %}">Map</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="{% url 'dataviz' %}">Data</a>
+      </li>
+    </ul>
+    <ul class="navbar-nav navbar-right">
+    {% if user.is_authenticated %}
+      <li class="nav-item">
+        <div>Logged in as:
+          <a href="{% url 'userprofile' %}">{{ user.username }}</a>
+          <a href="{% url 'account_logout' %}" class="btn btn-info fa fa-sign-out" role="button">Log out</a>
+        </div>
+      </li>
+    {% else %}
+      <li class="nav-item">
+        <a href="{% url 'account_login' %}" class="btn btn-info fa fa-user" role="button">Login / Sign Up</a>
+      </li>
+    {% endif %}
+    </ul>
+  </div>
+</nav>

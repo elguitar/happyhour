@@ -1,0 +1,14 @@
+{% extends 'master.html' %}
+{% block content %}
+<div class="container">
+    <h2> {{ bar }}</h2>
+    <h3> Happyhours: </h3>
+    <ul>
+      {% for hh in happyhours %}
+      <li>
+        {{ hh }}
+      </li>
+      {% endfor %}
+    <ul>
+</div>
+{% endblock %}

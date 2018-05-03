@@ -1,0 +1,8 @@
+{% extends 'master.html' %}
+{% block content %}
+<div class="container">
+    <h2>Profile page for {{ user.get_username }}</h2>
+    <h3>General information</h3>
+    <p>Name: {{ user.get_full_name }}</p>
+</div>
+{% endblock %}
